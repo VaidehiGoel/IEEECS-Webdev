@@ -1,0 +1,307 @@
+/* Importing the Exact Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+/* Global Styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    background: black;
+    position: relative;
+}
+
+/* Left Section - Logo + "Ideas" */
+.nav-left {
+    display: flex;
+    flex-direction: column; /* Stack logo and text */
+    align-items: flex-start;
+}
+
+/* Logo */
+.nav-logo img {
+    width: 50px;
+}
+
+/* "Ideas" Text */
+.nav-title {
+    font-size: 120px;
+    font-weight: 700;
+    margin-top: 10px; /* Space below logo */
+    line-height: 1.1;
+}
+
+/* Right Section */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Contact Button */
+.contact-btn {
+    background: #DFFF00;
+    color: black;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #c2e400;
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Ideas Grid */
+.ideas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    padding: 80px;
+    justify-content: center;
+}
+
+/* Individual Idea Card */
+.idea-card {
+    background: black;
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+}
+.idea-card:hover{
+    border:1px solid white;
+}
+
+/* Image Styling */
+.idea-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid white;
+    border-radius: 12px;
+}
+.idea-card img:hover{
+    transform:scale(1.02);
+    box-shadow:0px 10px 20px rgba(0,0,0,0.2);
+}
+/* Idea Card Styling */
+.idea-card {
+    background: black;
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Description & Date Styling */
+.idea-info {
+    padding-top: 15px;
+}
+
+.idea-info h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.idea-info .date {
+    font-size: 10px;
+    font-weight: 300;
+    color: #888;
+    text-transform: uppercase;
+    margin-top:100px;
+}
+
+
+/* Footer Section */
+.custom-footer {
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 50px;
+    border-top: 1px solid white;
+}
+
+.footer-left {
+    text-align: center; /* Centers the text */
+    color: white; /* Ensures visibility on dark background */
+    margin: 20px; /* Centers within the container */
+    width: 50%; 
+
+    
+
+}
+
+.footer-left h2 {
+    font-size: 48px; /* Large heading */
+    font-weight: bold; /* Bold text */
+    margin-top:20px;
+    margin-bottom: 10px;
+
+    
+    
+}
+
+.footer-left p {
+    font-size: 18px; /* Smaller text for the paragraph */
+    font-weight: bold; /* Bold text */
+    max-width: 600px; /* Keeps it from stretching too wide */
+    margin: 0 auto;
+}
+
+/* Rocket Icon */
+.footer-left img {
+    margin-top:50px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+/* Subscription Form */
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-form label {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.subscribe-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+    color: white;
+}
+
+
+.subscribe-form button {
+    margin-top: 10px;
+    padding: 10px 10px; /* Increase padding for a bigger button */
+    background: transparent;
+    color:white;
+    border:1px solid white;
+    
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px; /* Make text larger */
+    border-radius: 30px; /* More rounded edges */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.subscribe-form button:hover {
+    color:black;
+    background: white; /* Slightly darker yellow on hover */
+    transform: scale(1.05); /* Small hover effect */
+}
+
+
+
+/* Footer Navigation - Vertical List with Lines */
+.footer-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-right ul li {
+    border-bottom: 1.5px solid white; /* Slightly thicker */
+    padding: 18px 0; /* Ensures spacing matches */
+}
+
+
+.footer-right ul li:last-child {
+    border-bottom: none; /* Remove line under the last item */
+}
+
+.footer-right ul li span {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 6000;
+    text-transform: none; /* Ensures no forced uppercase */
+}
+
+.footer-right ul li a:hover {
+    color: gray;
+}
+.footer-social-icons {
+    display: flex;
+    justify-content: center; /* Align icons horizontally */
+    gap: 12px; /* Space between icons */
+    padding: 20px 0; /* Space above/below */
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid white; /* Circular border */
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: white;
+    color: black;
+}
+.privacy-policy {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+.privacy-policy a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.3s ease-in-out;
+}
+
+.privacy-policy a:hover {
+    color: white;
+}
+
+
